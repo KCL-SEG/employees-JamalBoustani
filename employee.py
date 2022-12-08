@@ -12,6 +12,7 @@ class Employee:
         self.comission_rate = comission_rate
 
     def get_pay(self):
+        pay = 0
         if self.contract_type == 'monthly':
             pay += self.salary_amount
         elif self.contract_type == 'hourly':
