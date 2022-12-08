@@ -31,14 +31,14 @@ class Employee:
         if self.contract_type == 'monthly':
             if self.comission_type == '':
                 string = f'{self.name} works on a {self.contract_type} salary of {self.salary_amount}.  Their total pay is {Employee.get_pay(self)}.'
-            elif self.comission_type == 'contract':
+            elif self.comission_type == 'contract comission':
                 string = f'{self.name} works on a {self.contract_type} salary of {self.salary_amount} and receives a commission for {self.comission_amount} contract(s) at {self.comission_rate}/contract.  Their total pay is {Employee.get_pay(self)}.'
             elif self.comission_type == 'bonus':
                 string = f'{self.name} works on a {self.contract_type} salary of {self.salary_amount} and receives a bonus commission of {self.comission_amount}.  Their total pay is {Employee.get_pay(self)}.'
         elif self.contract_type == 'hourly':
             if self.comission_type == '':
                 string = f'{self.name} works on a contract of {self.salary_amount} hours at {self.rate}/hour.  Their total pay is {Employee.get_pay(self)}.'
-            elif self.comission_type == 'contract':
+            elif self.comission_type == 'contract comission':
                 string = f'{self.name} works on a contract of {self.salary_amount} hours at {self.rate}/hour and receives a commission for {self.comission_amount} contract(s) at {self.comission_rate}/contract.  Their total pay is {Employee.get_pay(self)}.'
             elif self.comission_type == 'bonus':
                 string = f'{self.name} works on a contract of {self.salary_amount} hours at {self.rate}/hour and receives a bonus commission of {self.comission_amount}.  Their total pay is {Employee.get_pay(self)}.'
